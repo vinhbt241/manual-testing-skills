@@ -1,0 +1,5 @@
+interface:
+  display_name: "Play Around"
+  short_description: "Explore a live app and report unexpected errors"
+policy:
+  allow_implicit_invocation: false
