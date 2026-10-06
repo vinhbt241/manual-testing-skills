@@ -1,0 +1,5 @@
+interface:
+  display_name: "To Test Script"
+  short_description: "Turn docs into a manual-test script"
+policy:
+  allow_implicit_invocation: false

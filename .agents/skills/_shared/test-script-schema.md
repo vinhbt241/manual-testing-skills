@@ -1,6 +1,6 @@
 # Test Script Schema
 
-Test scripts are markdown files, one per feature or suite, living under `test-scripts/` (or passed ad-hoc by path/URL). `manual-test` reads them.
+Test scripts are markdown files, one per feature or suite, living under `test-scripts/` (or passed ad-hoc by path/URL). `manual-test` reads them; `to-test-script` authors them.
 
 ## File layout
 

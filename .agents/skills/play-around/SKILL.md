@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 Explore a live web app the way an untrained manual tester does: navigate, click around, and hunt for unexpected errors. Every finding is a single observation, so nothing is "confirmed" — everything lands for a human to judge.
 
-Read `browser-evidence.md` (bundled with this skill) before running. Drive the browser through the Playwright MCP tools.
+Read `../_shared/browser-evidence.md` before running. Drive the browser through the Playwright MCP tools.
 
 ## Process
 
@@ -25,7 +25,7 @@ Read `browser-evidence.md` (bundled with this skill) before running. Drive the b
 
 ### 3. Watch for unexpected errors
 
-Treat the following as a finding (the full signal list lives in `browser-evidence.md`):
+Treat the following as a finding (the full signal list lives in `../_shared/browser-evidence.md`):
 
 - console errors
 - failed network requests (4xx/5xx)
@@ -44,4 +44,4 @@ Do **not** try to reproduce or classify — a single observation stays a single 
 
 ### 5. Write the report
 
-Write one report per run to `docs/test-reports/<yyyy-mm-dd>-<slug>.md`, following the conventions in `browser-evidence.md`. Summary line up top (pages visited, findings count). Each finding gets the evidence bundle above. Close by listing the pages visited so the human can see the coverage.
+Write one report per run to `docs/test-reports/<yyyy-mm-dd>-<slug>.md`, following the conventions in `../_shared/browser-evidence.md`. Summary line up top (pages visited, findings count). Each finding gets the evidence bundle above. Close by listing the pages visited so the human can see the coverage.

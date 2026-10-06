@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 Run a documented test script against a live web app the way a manual tester would, and produce a report of what passed, failed, flaked, and stayed undetermined.
 
-Read `browser-evidence.md` and `test-script-schema.md` (bundled with this skill) before running. Drive the browser through the Playwright MCP tools. Never mark a step passed without observing its result.
+Read `../_shared/browser-evidence.md` and `../_shared/test-script-schema.md` before running. Drive the browser through the Playwright MCP tools. Never mark a step passed without observing its result.
 
 ## Process
 
@@ -45,6 +45,6 @@ Loop: re-test failed cases until none remain undetermined (every case is real-fa
 
 ### 5. Write the report
 
-Write one report per run to `docs/test-reports/<yyyy-mm-dd>-<slug>.md`, following the conventions in `browser-evidence.md`. Summary line up top: `X pass / Y fail / Z flaky / N undetermined`. Each real-fail or undetermined case gets: URL, repro steps, expected vs actual, console errors, failed network calls, and a screenshot at `docs/test-reports/assets/<id>.png`.
+Write one report per run to `docs/test-reports/<yyyy-mm-dd>-<slug>.md`, following the conventions in `../_shared/browser-evidence.md`. Summary line up top: `X pass / Y fail / Z flaky / N undetermined`. Each real-fail or undetermined case gets: URL, repro steps, expected vs actual, console errors, failed network calls, and a screenshot at `docs/test-reports/assets/<id>.png`.
 
 Flag `real-fail` and `undetermined` cases for the human to confirm. `flaky` cases are noted and closed.
