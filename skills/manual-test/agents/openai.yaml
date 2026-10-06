@@ -1,5 +1,0 @@
-interface:
-  display_name: "Manual Test"
-  short_description: "Run a test script against a live app and report pass/fail/flaky"
-policy:
-  allow_implicit_invocation: false
